@@ -23,7 +23,7 @@ const RULES: Rule[] = [
   { type: "phone", label: "Phone", pattern: /\+?\d[\d\s-]{8,}\d/g, confidence: 96 },
   { type: "password", label: "Password", pattern: /(?<=password:\s*)\S+/gi, confidence: 100 },
   { type: "account", label: "Account No.", pattern: /(?<=account (number|no\.?):\s*)\d+/gi, confidence: 94 },
-  { type: "name", label: "Name", pattern: /(?<=name:\s*)[A-Z][a-z]+ [A-Z][a-z]+/g, confidence: 91 },
+  { type: "name", label: "Name", pattern: /(?<=name:\s*)[A-Z][a-z]+ [A-Z][a-z]+/gi, confidence: 91 },
   { type: "address", label: "Address", pattern: /(?<=address:\s*).+/gi, confidence: 89 },
 ];
 
